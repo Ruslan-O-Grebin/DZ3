@@ -41,6 +41,11 @@
             line-height: 1.2;
             }
 
+        h1, h2, h3, h4, p {
+                            margin: 0;
+                            padding: 0;
+                        }    
+
         .container {
                     width: 1200px;
                     padding: 0 15px;
@@ -87,13 +92,17 @@
 /* Головна сторінка сайту (Студія) */
         
         /* Шапка з основними посиланнями*/
+        
+        header {
+                border-bottom: 1px solid #ECECEC;
+                 }
 
         .hat {
             display: flex;
             align-items: center;
 
             height: 80px;
-            border-bottom: 1px solid #ECECEC;
+            
             }
 
         .nav-site {
@@ -184,14 +193,18 @@
             .hero-title {
                     color: var(--full-white-color);
                     
+                    width: 700px;
+
                     font-weight: 900;
                     font-size: 44px;
                     line-height: 1.35;                               
                     letter-spacing:0.06em;
                     
                     text-transform: uppercase;
-                    margin-top: 0;
-                    margin-bottom: 30px;
+                    margin: 0 auto 30px auto;
+                   
+                    
+                    
                      }
 
             .button.primary {
@@ -226,7 +239,6 @@
                             font-size: 14px;
                             
                             text-transform: uppercase;
-                            margin-top: 0;
                             margin-bottom: 12px;
                         }
 
@@ -234,7 +246,6 @@
                             color: var(--basic-gray-color);
 
                             line-height: 1.5;
-                            margin: 0;
                             } 
             
         /* Блок - Візуалізація роботи компанії */
@@ -280,7 +291,6 @@
                     font-size: 16px;
                                 
                     text-align: center;
-                    margin-top: 0;
                     margin-bottom: 12px;
                     }
 
@@ -289,8 +299,7 @@
                     
                     font-size: 16px;
                                     
-                    text-align: center;
-                    margin: 0;
+                    text-align: center;                  
                     }
 
         /* Підвал з адресними даними та посиланням */
@@ -405,18 +414,26 @@
                     }
 
         .exampel {
-                width: calc( ( 100% - 60px ) / 3 );
-                border: 1px solid #EEEEEE;
-                
+                width: calc( ( 100% - 60px ) / 3 ); 
                 }   
                 
-               .exampel:not(:nth-child(3n)) {
+        .exampel:not(:nth-child(3n)) {
                                     margin-right: 30px;
                                      }
 
         .exampel:not(:nth-last-child(-n+3)) {
                                     margin-bottom: 30px;
                                     }
+        .exampel img {
+                     vertical-align: bottom;
+                    }
+
+        .exampel-descr {
+                        border-bottom: 1px solid #EEEEEE;
+                        border-left: 1px solid #EEEEEE;
+                        border-right: 1px solid #EEEEEE;
+                        /* border: 1px solid #EEEEEE; */
+                        }
 
         .exampel h3 {
                     color:var(--basic-black-color);
@@ -440,9 +457,4 @@
                 margin: 0 24px 20px 24px;
                 }
 
-        .exampel .descr {
-                    background-color: var(--basic-blue-color);
-                    color: var(--full-white-color);
-
-                    font-size: 18px;
-                    }
+       
