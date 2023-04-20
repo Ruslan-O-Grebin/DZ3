@@ -432,7 +432,8 @@
                         border-bottom: 1px solid #EEEEEE;
                         border-left: 1px solid #EEEEEE;
                         border-right: 1px solid #EEEEEE;
-                        /* border: 1px solid #EEEEEE; */
+                        
+                        padding-top: 20px;
                         }
 
         .exampel h3 {
@@ -443,7 +444,7 @@
                     line-height: 1.5;
                     letter-spacing: 0.06em;
 
-                    margin: 20px 24px 4px 24px;
+                    margin: 0 24px 4px 24px;
                     }
 
         .exampel p {
